@@ -1,9 +1,9 @@
-Open gallery.html for the new eight-photo gallery. Click a photo for its full view and caption; use arrow keys or buttons to navigate. Original photo files are preserved.
+WEBSITE UPDATE — 27 October 2026
 
-Chronology is provisional: 25 August 2026 and April 2024 were supplied by Naveed. Uploaded photos have no capture-date metadata. Undated photographs are approximately ordered, with recent lab visits first and China photographs last. Professor Paullet and Sheng Gui spellings follow user descriptions; confirm before publication.
+Copy the CONTENTS of this folder into your existing website repository, replacing matching files and merging the assets folder. Do not delete the .git folder or other repository settings.
 
-Code & Software is merged into the Research navigation. Existing publications retain 12 selected papers and 41 publisher links. The 2026 TBME DOI remains independently unverified. Browser appearance has not been checked here. Nothing is published online.
+The digital twin video is ALREADY INCLUDED at assets/rehab-twin.mp4. No separate video download is needed. Keep this filename and location.
 
-Open publications.html for 12 selected papers and all 41 publications. The citation chart has been removed. Open gallery.html for the four-column photo gallery.
+Open index.html in Chrome to review. In GitHub Desktop, review changes, commit, and Push origin to publish through your existing GitHub Pages configuration.
 
-Collaborations update: open collaborators.html. Fourteen featured names match the supplied figure. Country buttons filter map routes and show affiliation evidence. 40 of 43 coauthors now have mapped affiliations. Yin Zhang, Jianqiang Lin and Zhenhuan Hu remain unplotted because the affiliation block of their joint 2021 IEEE Access article could not be retrieved. See collaborator-affiliations.csv and publication-affiliation-audit.csv. Fawad’s University of Canberra affiliation was confirmed by the site owner. All 41 paper DOI pages were attempted; see the audit for retrieval limits. Browser rendering has not been checked in this environment. Map geography: Natural Earth public domain.
+Changes: Research tab retained, with an updated-soon message; Home demonstration button opens video; new colleagues/supervisor photograph replaces the solo poster-display photo (slide 4). Research page file retained for future use.
