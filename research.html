@@ -4,15 +4,16 @@
 .news-list article{display:grid;grid-template-columns:190px 1fr;gap:30px;align-items:baseline;padding:22px 0;border-top:1px solid #d7dbd1}.news-list time{font-size:13px;color:#8a6b39}.news-list p{margin:0;color:#253e35;font-size:16px}.quick{flex-wrap:wrap;max-width:560px;row-gap:14px}.hero-copy h1{margin-top:0}.pub h3{font-size:22px}</style><style>
 .r-intro{padding-bottom:30px}.r-intro h1{font:64px/1.05 Georgia;font-weight:normal;letter-spacing:-1.5px;margin:14px 0 20px}.r-intro .lede{max-width:760px;font-size:17px}
 .plist{padding-top:20px}.plist-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #afbaad;padding-bottom:14px;margin-bottom:34px;font-size:12px;letter-spacing:2px;color:#8a6b39;text-transform:uppercase}
-.pcard{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:center;padding-bottom:46px;margin-bottom:46px;border-bottom:1px solid #d8ddd4}
-.pcard .media{position:relative;display:block;background:#102722;aspect-ratio:1228/700;overflow:hidden}.pcard .media video,.pcard .media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s}.pcard:hover .media video{transform:scale(1.02)}
+.pcard{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:44px;align-items:stretch;padding-bottom:46px;margin-bottom:46px;border-bottom:1px solid #d8ddd4}.pcard>div{display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.pcard .pstats{margin-bottom:22px}
+@media(min-width:901px) and (max-width:1250px){.pcard{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px}.pcard h2{font-size:23px}.pcard p{font-size:13.5px;line-height:1.6;margin-bottom:12px}.pcard .pstats div b{font-size:24px}.pcard .pstats{margin-bottom:16px}}
+.pcard .media{position:relative;display:block;background:#102722;min-height:100%;overflow:hidden}.pcard .media video,.pcard .media img{position:absolute;inset:0}.pcard .media video,.pcard .media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s}.pcard:hover .media video{transform:scale(1.02)}
 .pcard .badge{position:absolute;left:14px;bottom:14px;background:#0e211ee8;color:#fff;font-size:11.5px;letter-spacing:.5px;padding:7px 11px;display:flex;align-items:center;gap:8px}.pcard .badge i{width:7px;height:7px;border-radius:50%;background:var(--gold);display:inline-block}
-.pcard h2{font-size:36px;margin:12px 0 14px}.pcard h2 a:hover{color:#6f5527}.pcard p{margin:0 0 18px}
+.pcard h2{font-size:28px;line-height:1.22;margin:10px 0 12px}.pcard h2 a:hover{color:#6f5527}.pcard p{margin:0 0 16px;font-size:14.5px;line-height:1.7}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;list-style:none}.chips li{font-size:12px;line-height:1.3;color:#40544d;border:1px solid #c9cfc3;padding:6px 10px;background:#fbfaf6}
 .pstats{display:flex;gap:30px;margin:0 0 24px}.pstats div b{display:block;font:30px/1 Georgia;font-weight:normal;color:#8a6b39}.pstats div span{display:block;font-size:12.5px;line-height:1.45;color:#53635e;margin-top:6px;max-width:150px}
 .go{display:inline-flex;align-items:center;gap:10px;padding:14px 20px;background:var(--gold);color:#14251e;font-size:13px;min-height:44px}.go:hover{background:#cfa862}
 @media(prefers-reduced-motion:reduce){.pcard .media video{transition:none}}
-@media(max-width:900px){.r-intro h1{font-size:44px}.pcard{grid-template-columns:minmax(0,1fr);gap:22px}.pcard h2{font-size:28px}.pstats{gap:18px}.pstats div b{font-size:24px}.plist-head{flex-direction:column;gap:6px}}
+@media(max-width:900px){.r-intro h1{font-size:44px}.pcard{grid-template-columns:minmax(0,1fr);gap:22px}.pcard .media{min-height:0;aspect-ratio:16/9}.pcard h2{font-size:28px}.pstats{gap:18px}.pstats div b{font-size:24px}.plist-head{flex-direction:column;gap:6px}}
 </style><link href="mobile.css" rel="stylesheet"/><script defer="True" src="mobile.js"></script></head><body><header><a aria-label="Home" class="logo" href="index.html">NAK</a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="gallery.html">Gallery</a><a href="collaborators.html">Collaborators</a><a href="teaching.html">Teaching &amp; Service</a><a href="news.html">News</a></nav></header><main>
 <section class="wrap r-intro">
  <span class="kicker">Research</span>
@@ -25,7 +26,7 @@
 
  <article class="pcard" aria-labelledby="pc-rehabtwin">
   <a class="media" href="rehabtwin.html" tabindex="-1" aria-hidden="true">
-   <video autoplay muted loop playsinline preload="metadata" poster="assets/research/twin-pair.jpg"><source src="assets/research/rehabtwin-preview.mp4" type="video/mp4"></video>
+   <video autoplay muted loop playsinline preload="metadata" poster="assets/research/twin-pair.jpg" controlslist="nodownload noremoteplayback" disablepictureinpicture oncontextmenu="return false"><source src="assets/research/rehabtwin-preview.mp4" type="video/mp4"></video>
    <span class="badge"><i></i>Under review · IEEE/ASME T-Mech</span>
   </a>
   <div>
@@ -33,29 +34,27 @@
    <h2 id="pc-rehabtwin"><a href="rehabtwin.html">RehabTwin: a calibrated digital twin that teaches a DeepONet to control a rehabilitation robot</a></h2>
    <p>I built a digital twin of our upper-limb robot, calibrated it on the real hardware, and used it to teach a DeepONet how to correct any exercise before it starts, so the joints stop lagging and sticking behind the plan.</p>
    <div class="pstats"><div><b>59–76%</b><span>lower tracking error than the drive alone</span></div><div><b>132 + 2</b><span>bench runs and volunteer tests</span></div></div>
-   <ul class="chips" aria-label="Methods"><li>Digital twin</li><li>DeepONet</li><li>Iterative learning control</li><li>Sim-to-real</li></ul>
    <a class="go" href="rehabtwin.html">View project →</a>
   </div>
  </article>
 
  <article class="pcard" aria-labelledby="pc-ankle">
   <a class="media" href="ankle-energy.html" tabindex="-1" aria-hidden="true">
-   <video autoplay muted loop playsinline preload="metadata" poster="assets/research/ankle-triptych-poster.jpg"><source src="assets/research/ankle-preview.mp4" type="video/mp4"></video>
-   <span class="badge"><i></i>Published · Advanced Engineering Informatics</span>
+   <video autoplay muted loop playsinline preload="metadata" poster="assets/research/ankle-triptych-poster.jpg" controlslist="nodownload noremoteplayback" disablepictureinpicture oncontextmenu="return false"><source src="assets/research/ankle-preview.mp4" type="video/mp4"></video>
+   <span class="badge" style="top:14px;bottom:auto"><i></i>Published · Advanced Engineering Informatics</span>
   </a>
   <div>
    <span class="kicker">02 · Ankle rehabilitation · 2026</span>
    <h2 id="pc-ankle"><a href="ankle-energy.html">Energy shaping with an attention-augmented neural operator for an ankle rehabilitation robot</a></h2>
    <p>The controller builds an energy landscape around the ankle's target posture, so the robot's torque comes from its slope. An attention-augmented Fourier neural operator re-tunes the landscape for each person, spending less energy and keeping the interaction safe.</p>
    <div class="pstats"><div><b>20.0%</b><span>energy-efficiency gain (FNO 16.0%)</span></div><div><b>10</b><span>volunteers, six ankle exercises</span></div></div>
-   <ul class="chips" aria-label="Methods"><li>Energy shaping (IDA-PBC)</li><li>Fourier neural operator</li><li>Attention</li><li>Pneumatic muscles</li></ul>
    <a class="go" href="ankle-energy.html">View project →</a>
   </div>
  </article>
 
  <article class="pcard" aria-labelledby="pc-rl">
   <a class="media" href="rl-path.html" tabindex="-1" aria-hidden="true">
-   <video autoplay muted loop playsinline preload="metadata" poster="assets/research/rl-hero-poster.jpg"><source src="assets/research/rl-preview.mp4" type="video/mp4"></video>
+   <video autoplay muted loop playsinline preload="metadata" poster="assets/research/rl-hero-poster.jpg" controlslist="nodownload noremoteplayback" disablepictureinpicture oncontextmenu="return false"><source src="assets/research/rl-preview.mp4" type="video/mp4"></video>
    <span class="badge"><i></i>Published · IEEE TNSRE</span>
   </a>
   <div>
@@ -63,7 +62,6 @@
    <h2 id="pc-rl"><a href="rl-path.html">Reinforcement learning that plans energy-efficient ankle exercises for stroke survivors</a></h2>
    <p>A PPO agent, guided by a musculoskeletal model and the energy exchanged between patient and robot, reshapes each exercise path so it stays accurate while lowering joint torque, muscle strain and patient effort.</p>
    <div class="pstats"><div><b>51.3%</b><span>joint torque reduction after training</span></div><div><b>10</b><span>stroke patients</span></div></div>
-   <ul class="chips" aria-label="Methods"><li>Reinforcement learning (PPO)</li><li>Musculoskeletal model</li><li>Transactive energy</li><li>EMG</li></ul>
    <a class="go" href="rl-path.html">View project →</a>
   </div>
  </article>

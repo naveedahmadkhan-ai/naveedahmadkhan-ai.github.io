@@ -7,3 +7,11 @@ document.addEventListener('DOMContentLoaded',()=>{
  nav.addEventListener('click',e=>{if(e.target.closest('a'))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});document.addEventListener('click',e=>{if(!header.contains(e.target))close()});
  window.addEventListener('resize',()=>{if(window.innerWidth>900)close()});
 });
+
+/* Videos: no download button, no picture-in-picture, no right-click menu (Save video as) */
+document.addEventListener('DOMContentLoaded',()=>{
+ const guard=v=>{try{v.setAttribute('controlslist','nodownload noremoteplayback');v.disablePictureInPicture=true;v.setAttribute('disablepictureinpicture','')}catch(e){}};
+ document.querySelectorAll('video').forEach(guard);
+ new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>{if(n.tagName==='VIDEO')guard(n);else if(n.querySelectorAll)n.querySelectorAll('video').forEach(guard)}))).observe(document.body,{childList:true,subtree:true});
+ document.addEventListener('contextmenu',e=>{if(e.target.closest&&e.target.closest('video'))e.preventDefault()});
+});

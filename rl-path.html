@@ -68,7 +68,7 @@ a.status:hover{background:#1b3a33}
     </dl>
    </div>
    <figure class="p-video rlhero" style="margin:0">
-    <video autoplay muted loop playsinline controls controlslist="nodownload" preload="metadata" poster="assets/research/rl-hero-poster.jpg" aria-label="Video: the simulated robot following the RL-generated inversion and eversion path next to the real robot"><source src="assets/research/rl-hero.mp4" type="video/mp4">Your browser does not support embedded video.</video>
+    <video autoplay muted loop playsinline controls preload="metadata" poster="assets/research/rl-hero-poster.jpg" aria-label="Video: the simulated robot following the RL-generated inversion and eversion path next to the real robot" controlslist="nodownload noremoteplayback" disablepictureinpicture oncontextmenu="return false"><source src="assets/research/rl-hero.mp4" type="video/mp4">Your browser does not support embedded video.</video>
     <figcaption>Inversion and eversion: our simulated robot following the RL-generated path (left) and the real robot (right).</figcaption>
    </figure>
   </div>
@@ -169,14 +169,14 @@ a.status:hover{background:#1b3a33}
      <button type="button" data-ex="ab" aria-pressed="false">Abduction / adduction</button>
     </div>
     <div class="simgrid">
-     <figure class="fig"><video id="rl-simv" muted playsinline loop preload="auto" poster="assets/research/rl-sim-ie-poster.jpg" aria-label="Video: simulated robot following the RL-generated path"><source src="assets/research/rl-sim-ie.mp4" type="video/mp4"></video><figcaption id="rl-simcap">Simulation (Simscape model of the lab robot)</figcaption></figure>
+     <figure class="fig"><video id="rl-simv" muted playsinline loop preload="auto" poster="assets/research/rl-sim-ie-poster.jpg" aria-label="Video: simulated robot following the RL-generated path" controlslist="nodownload noremoteplayback" disablepictureinpicture oncontextmenu="return false"><source src="assets/research/rl-sim-ie.mp4" type="video/mp4"></video><figcaption id="rl-simcap">Simulation (Simscape model of the lab robot)</figcaption></figure>
      <div class="plot-box simplot">
       <div class="ctrls"><button type="button" class="btn" id="rl-play">Pause</button><button type="button" class="btn" id="rl-replay">Replay</button><span class="f7-time" id="rl-time">t = 0.0 s</span></div>
       <div class="legend" aria-hidden="true"><span><i style="background:#4a7db3"></i>Actual path</span><span><i style="background:repeating-linear-gradient(90deg,#b8653f 0 7px,transparent 7px 11px)"></i>RL-generated path</span><span><i class="sq" style="background:#1d7a58;opacity:.55"></i>Absolute error</span></div>
       <div class="chart-wrap"><svg id="rl-chart" viewBox="0 0 640 520" role="img" aria-label="Animated chart of the actual and RL-generated path in radians over 20 seconds, and their absolute error, drawn in step with the simulation video."></svg><div class="tip" id="rl-tip" role="status"></div></div>
       <p class="note" id="rl-note" style="margin:6px 0 0"></p>
      </div>
-     <figure class="fig"><video id="rl-realv" autoplay muted playsinline loop preload="metadata" poster="assets/research/ankle-front-poster.jpg" aria-label="Video: the real ankle robot performing the exercise"><source src="assets/research/ankle-front.mp4" type="video/mp4"></video><figcaption id="rl-realcap">Real robot</figcaption></figure>
+     <figure class="fig"><video id="rl-realv" autoplay muted playsinline loop preload="metadata" poster="assets/research/ankle-front-poster.jpg" aria-label="Video: the real ankle robot performing the exercise" controlslist="nodownload noremoteplayback" disablepictureinpicture oncontextmenu="return false"><source src="assets/research/ankle-front.mp4" type="video/mp4"></video><figcaption id="rl-realcap">Real robot</figcaption></figure>
     </div>
     <p class="note">Paths of Fig. 5, traced from the published figure. The simulated robot is our Simscape model of the lab robot.</p>
     <figure class="fig" style="margin-top:22px"><button class="photo" type="button" aria-label="Enlarge: the control panel"><img src="assets/research/rl-panel.jpg" alt="The MATLAB control panel next to the simulated robot, with the actual and RL-generated inversion/eversion paths, their absolute error and the four muscle lengths" loading="lazy" width="1600" height="867"></button><figcaption>The control panel I built in MATLAB to run and record these simulations: the robot in Simscape Mechanics Explorer (left), the paths, their error and the muscle lengths (right).</figcaption></figure>
