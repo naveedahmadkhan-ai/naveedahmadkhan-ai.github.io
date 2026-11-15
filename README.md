@@ -1,2 +1,2 @@
 # naveedahmadkhan-ai
-Personal academic website of Naveed Ahmad Khan
+Personal academic website of Naveed Ahmad Khan 
