@@ -6,4 +6,4 @@ The digital twin video is ALREADY INCLUDED at assets/rehab-twin.mp4. No separate
 
 Open index.html in Chrome to review. In GitHub Desktop, review changes, commit, and Push origin to publish through your existing GitHub Pages configuration.
 
-Changes: Research tab retained, with an updated-soon message; Home demonstration button opens video; new colleagues/supervisor photograph replaces the solo poster-display photo (slide 4). Research page file retained for future use.
+Changes: Research tab retained, with an updated-soon message; Home demonstration button opens video; new colleagues/supervisor photograph replaces the solo poster-display photo (slide 4). Research page file retained for future use.  
