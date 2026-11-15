@@ -24,13 +24,27 @@
 <section class="wrap plist" style="padding-top:10px" aria-label="Research projects">
  <div class="plist-head"><span>Projects</span><span>Newest first</span></div>
 
+ <article class="pcard" aria-labelledby="pc-aan">
+  <a class="media" href="ankle-aan.html" tabindex="-1" aria-hidden="true">
+   <video autoplay muted loop playsinline preload="metadata" poster="assets/research/ankle-aan-poster.jpg" controlslist="nodownload noremoteplayback" disablepictureinpicture oncontextmenu="return false"><source src="assets/research/ankle-aan-preview.mp4" type="video/mp4"></video>
+   <span class="badge"><i></i>Under review · IEEE TNNLS</span>
+  </a>
+  <div>
+   <span class="kicker">01 · Ankle rehabilitation · 2026</span>
+   <h2 id="pc-aan"><a href="ankle-aan.html">Learning assist-as-needed control with a Fourier neural operator for an ankle rehabilitation robot</a></h2>
+   <p>A Fourier neural operator predicts how much help each patient needs before the exercise starts, adaptation laws refine it as the patient moves, and the robot gives that help through its equilibrium point. The page includes the stability mathematics and proofs, which hold for any output of the network.</p>
+   <div class="pstats"><div><b>1–2 ms</b><span>to predict the starting assistance</span></div><div><b>Any output</b><span>of the network keeps the loop stable</span></div></div>
+   <a class="go" href="ankle-aan.html">View project →</a>
+  </div>
+ </article>
+
  <article class="pcard" aria-labelledby="pc-rehabtwin">
   <a class="media" href="rehabtwin.html" tabindex="-1" aria-hidden="true">
    <video autoplay muted loop playsinline preload="metadata" poster="assets/research/twin-pair.jpg" controlslist="nodownload noremoteplayback" disablepictureinpicture oncontextmenu="return false"><source src="assets/research/rehabtwin-preview.mp4" type="video/mp4"></video>
    <span class="badge"><i></i>Under review · IEEE/ASME T-Mech</span>
   </a>
   <div>
-   <span class="kicker">01 · Upper-limb rehabilitation · 2026</span>
+   <span class="kicker">02 · Upper-limb rehabilitation · 2026</span>
    <h2 id="pc-rehabtwin"><a href="rehabtwin.html">RehabTwin: a calibrated digital twin that teaches a DeepONet to control a rehabilitation robot</a></h2>
    <p>I built a digital twin of our upper-limb robot, calibrated it on the real hardware, and used it to teach a DeepONet how to correct any exercise before it starts, so the joints stop lagging and sticking behind the plan.</p>
    <div class="pstats"><div><b>59–76%</b><span>lower tracking error than the drive alone</span></div><div><b>132 + 2</b><span>bench runs and volunteer tests</span></div></div>
@@ -44,7 +58,7 @@
    <span class="badge" style="top:14px;bottom:auto"><i></i>Published · Advanced Engineering Informatics</span>
   </a>
   <div>
-   <span class="kicker">02 · Ankle rehabilitation · 2026</span>
+   <span class="kicker">03 · Ankle rehabilitation · 2026</span>
    <h2 id="pc-ankle"><a href="ankle-energy.html">Energy shaping with an attention-augmented neural operator for an ankle rehabilitation robot</a></h2>
    <p>The controller builds an energy landscape around the ankle's target posture, so the robot's torque comes from its slope. An attention-augmented Fourier neural operator re-tunes the landscape for each person, spending less energy and keeping the interaction safe.</p>
    <div class="pstats"><div><b>20.0%</b><span>energy-efficiency gain (FNO 16.0%)</span></div><div><b>10</b><span>volunteers, six ankle exercises</span></div></div>
@@ -58,7 +72,7 @@
    <span class="badge"><i></i>Published · IEEE TNSRE</span>
   </a>
   <div>
-   <span class="kicker">03 · Ankle rehabilitation · 2025</span>
+   <span class="kicker">04 · Ankle rehabilitation · 2025</span>
    <h2 id="pc-rl"><a href="rl-path.html">Reinforcement learning that plans energy-efficient ankle exercises for stroke survivors</a></h2>
    <p>A PPO agent, guided by a musculoskeletal model and the energy exchanged between patient and robot, reshapes each exercise path so it stays accurate while lowering joint torque, muscle strain and patient effort.</p>
    <div class="pstats"><div><b>51.3%</b><span>joint torque reduction after training</span></div><div><b>10</b><span>stroke patients</span></div></div>
